@@ -15,7 +15,7 @@ if (mysqli_num_rows($result) > 0) {
         }        
     }    
 } else {
-        echo "No data found.";
+    echo "No data found.";
 }
 $db->close();
 ?>
