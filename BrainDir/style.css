@@ -1,0 +1,311 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+.uploadMenuOpen{
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    border-style: solid;
+    background: linear-gradient(0deg, rgb(41 41 43)47%, rgba(100,128,134,1) 170%);
+    transition-duration: 800ms;
+    justify-content: center;
+    height: fit-content;
+    max-height: 300px;
+    max-width: 80vw;
+    border-color: rgb(107 134 140);
+    color: bisque;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 60px;
+}
+
+.uploadMenu{
+    background: linear-gradient(0deg, rgb(41 41 43)47%, rgba(100,128,134,1) 170%);
+    border-radius: 10px;
+    border-style: solid;
+    display: flex;
+    height: fit-content;
+    max-height: 0;
+    margin-bottom: 4px;
+    border-color: transparent;
+    width: 40vw;
+    transition-duration: 800ms;
+    align-items: flex-start;
+    flex-direction: column;
+
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 60px;
+
+}
+.uploadLable{
+    position: absolute;
+    transition-duration: 800ms;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-block-end-width: 10px;
+    border-color: rgb(107 134 140);
+    color: bisque;
+    background: linear-gradient(0deg, rgb(41 41 43)47%, rgba(100,128,134,1) 170%);
+}
+.uploadLableActive{
+    color: #ccb293;
+    transition-duration: 800ms;
+    border-block-end-width: 5px;
+    background: linear-gradient(5deg, rgb(41 41 43)47%, rgba(100,128,134,1) 170%);
+
+}
+#amountLoaded{
+    margin-bottom: 4px;
+}
+
+#body{
+    background-color: #222;
+    background-position-x: -100px ;
+    justify-content: center;
+    background-size: 1px;
+    background-repeat: no-repeat;
+    background-position-y: -300px ;
+    overflow: overlay;
+    color: bisque;
+}
+#nav{
+    background-color: #1d1b1b;
+    height: 80px;
+/*👉    margin-top: -16px;
+    margin-left: -10px;
+    margin-right:  -10px;👈*/
+    border-style: inset;
+    border-radius: 10px;
+    border-color:#363333;
+}
+#uploadMenu{
+    text-decoration: none;
+
+}
+#uploadButton{
+    color: aliceblue;
+    margin: auto;
+    display: flex;
+    font-size: 40px;
+    background: none;
+    border: none;
+}
+.navButton{
+    border-color: #363333;
+    background-color: transparent;
+    color: bisque;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    height: 67px;
+    width: 21vw;
+    margin-top: 6px;
+}
+#buttonsContainer{
+    display: flex;
+    justify-content: space-around;
+    height: inherit;
+}
+
+#listingContainer{
+    margin-top: 35px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: overlay;
+}
+/*👉@media only screen and (max-width: 600px) {
+    #navButton{
+        margin-left: 1.8vw;
+    }
+    
+}
+@media only screen and (min-width: 1000px) {
+    #navButton{
+        margin-left: 2.7vw;
+    }
+    
+}👈*/
+
+    
+
+h1{  
+    /* color: aliceblue; */
+    text-align: center;
+    margin-right: 1%;
+    
+}
+#uploadForm{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#file1{
+    display: none;
+}
+#recentBooks{
+    
+    background-color: #363333;
+    width: 40%;
+    height: 360px;
+    border-radius: 10px;
+    text-align: center;
+    border-style:outset;
+    border-color: #1d1c1c;   
+    border-width: 5px; 
+    transition-duration: 800ms; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+
+    
+}
+#recentBooks:hover{
+    width: 55%;
+    transition-duration: 800ms;
+    z-index: 3;
+}
+@media screen and (max-width: 540px) {
+    #recentBooks:hover{
+        width: 100%;
+        transition-duration: 1200ms
+        
+
+    }
+}
+#recentVideos{
+    background-color: #363333;
+    width: 40%;
+    height: 360px;
+    margin-left: auto;
+    margin-top: -370px;
+    border-radius: 10px;
+    text-align: center;
+    border-style:outset;
+    border-color: #1d1c1c;   
+    border-width: 5px;    
+    transition-duration: 800ms;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    
+}
+#recentVideos:hover{
+    width: 55%;
+    transition-duration: 800ms;
+}
+@media screen and (max-width: 540px) {
+    #recentVideos:hover{
+        width: 100%;
+        transition-duration: 1200ms
+
+    }
+}
+#bookNotes{
+    background-color: #363333;
+    width: 40%;
+    height: 360px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center; 
+    border-style:outset;
+    border-color: #1d1c1c;   
+    border-width: 5px;
+    transition-duration: 800ms; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    
+          
+}
+#bookNotes:hover{
+    width: 55%;
+    transition-duration: 800ms;  
+    z-index: 2;
+}
+@media screen and (max-width: 540px) {
+    #bookNotes:hover{
+        width: 100%;
+        transition-duration: 1200ms
+    }
+}
+#videoNotes{
+    background-color: #363333;
+    width: 40%;
+    height: 360px;
+    margin-top: -370px;
+    border-radius: 10px;
+    text-align: center;
+    border-style:outset;
+    border-color: #1d1c1c;   
+    border-width: 5px;
+    transition-duration: 800ms;  
+    margin-left: auto;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    
+    
+}
+#videoNotes:hover{
+    transition-duration: 800ms; 
+    width: 55%;
+}
+@media screen and (max-width: 540px) {
+    #videoNotes:hover{
+        width: 100%;
+        transition-duration: 1200ms
+
+    }
+}
+::-webkit-scrollbar{
+    width: 1vw;
+    border-radius: 10px;
+    background: transparent
+}
+::-webkit-scrollbar-thumb{
+    
+    border-radius: 10px;
+    background: black;
+}
+::-webkit-scrollbar-track{
+    display: none;
+    background-color: aqua;
+}
+/*👉@media screen and (max-width: 1430px) {
+    button{
+        
+        transition-duration: 2000ms;
+    }
+    
+}👈*/
+
+
+
+ul{
+    display: table;
+    width: 100%;
+
+}
+
+li{
+    list-style: none;
+    display: table;
+    
+}
+hr{
+    border-color: dimgray;
+    border-radius: 10px;
+}
+#inputLable{
+    color: bisque;
+}
+.hide{
+    transition-duration: 800ms;
+    display: none;
+    color: transparent;
+
+}
