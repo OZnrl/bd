@@ -54,6 +54,7 @@ html{
     background: linear-gradient(0deg, rgb(41 41 43)47%, rgba(100,128,134,1) 170%);
 }
 .uploadLableActive{
+    margin-top: 45px;
     color: #ccb293;
     transition-duration: 800ms;
     border-block-end-width: 5px;
